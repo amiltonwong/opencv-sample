@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( LoadSave )
+find_package( OpenCV REQUIRED )
+add_executable( LoadSave LoadSave.cpp )
+target_link_libraries( LoadSave ${OpenCV_LIBS} )
