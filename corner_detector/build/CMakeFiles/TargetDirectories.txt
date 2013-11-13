@@ -1,0 +1,1 @@
+/home/howard/Documents/opencv/opencv-sample/corner_detector/build/CMakeFiles/corner_detector.dir
