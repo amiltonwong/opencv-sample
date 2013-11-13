@@ -21,3 +21,7 @@ This command will delete all the files in `/build`
 ## Reference
 
 - http://docs.opencv.org/index.html
+
+## License
+
+MIT
