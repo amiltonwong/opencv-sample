@@ -17,6 +17,9 @@ To clean up the files from cmake:
 
 This command will delete all the files in `/build`
 
+## Install
+
+- OpenCV installation: http://docs.opencv.org/trunk/doc/tutorials/introduction/linux_install/linux_install.html
 
 ## Reference
 
