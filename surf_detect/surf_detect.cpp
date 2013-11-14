@@ -103,15 +103,12 @@ int main()
 
             perspectiveTransform( obj_corners, scene_corners, H);
 
-			cout << "true" << endl;
             //Draw lines between the corners (the mapped object in the scene image )
             line( img_matches, scene_corners[0] + Point2f( object.cols, 0), scene_corners[1] + Point2f( object.cols, 0), Scalar(0, 255, 0), 4 );
             line( img_matches, scene_corners[1] + Point2f( object.cols, 0), scene_corners[2] + Point2f( object.cols, 0), Scalar( 0, 255, 0), 4 );
             line( img_matches, scene_corners[2] + Point2f( object.cols, 0), scene_corners[3] + Point2f( object.cols, 0), Scalar( 0, 255, 0), 4 );
             line( img_matches, scene_corners[3] + Point2f( object.cols, 0), scene_corners[0] + Point2f( object.cols, 0), Scalar( 0, 255, 0), 4 );
         }
-		else
-			cout << "false" << endl;
 
 
         //Show detected matches
