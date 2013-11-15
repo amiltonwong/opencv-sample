@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <vector>
 #include <iostream>
 #include <opencv2/core/core.hpp>
 #include <opencv2/features2d/features2d.hpp>
@@ -17,7 +18,7 @@ int main()
 
     if( !object.data )
     {
-        std::cout<< "Error reading object " << std::endl;
+        cout<< "Error reading object " << endl;
         return -1;
     }
 
@@ -25,7 +26,7 @@ int main()
     int minHessian = 500;
 
     SurfFeatureDetector detector( minHessian );
-    std::vector<KeyPoint> kp_object;
+    vector<KeyPoint> kp_object;
 
     detector.detect( object, kp_object );
 
@@ -41,7 +42,7 @@ int main()
 
     //namedWindow("Good Matches");
 
-    std::vector<Point2f> obj_corners(4);
+    vector<Point2f> obj_corners(4);
 
     //Get the corners from the object
     obj_corners[0] = cvPoint(0,0);
@@ -63,12 +64,12 @@ int main()
         }
 		
         Mat des_image, img_matches;
-        std::vector<KeyPoint> kp_image;
-        std::vector<vector<DMatch > > matches;
-        std::vector<DMatch > good_matches;
-        std::vector<Point2f> obj;
-        std::vector<Point2f> scene;
-        std::vector<Point2f> scene_corners(4);
+        vector<KeyPoint> kp_image;
+        vector<vector<DMatch > > matches;
+        vector<DMatch > good_matches;
+        vector<Point2f> obj;
+        vector<Point2f> scene;
+        vector<Point2f> scene_corners(4);
         Mat H;
         Mat image;
 
