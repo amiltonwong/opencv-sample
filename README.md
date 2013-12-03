@@ -25,6 +25,10 @@ This command will delete all the files in `/build`
 
 - http://docs.opencv.org/index.html
 
+## Books
+
+- http://shop.oreilly.com/product/0636920022497.do
+
 ## License
 
 MIT
